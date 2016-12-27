@@ -6,112 +6,45 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #ffffff;
 }
 
 #container-testimonios {
   display: flex;
   flex-direction: column;
-  margin-top: 36px;
-  margin-left: 80px;
+  align-items: center;
+  margin: 36px auto 0;
   max-width: 375px;
 }
 
 .foto-testimonio {
-  width: 217,2px;
-  height: 217,2px;
+  display: block;
+  width: 217.2px;
 }
 
 .text-testimonio {
   width: 214.6px;
-  height: 120px;
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
+  margin-top: 23.3px;
+  margin-bottom: 20.8px;
   text-align: center;
   color: #555555;
 }
 
 .nombre  {
   width: 214.6px;
-  height: 19px;
   font-size: 16px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   text-align: center;
-  color: black;
+  margin-bottom: 18.7px;
+  color:  #555555;
 }
 
 .comillas {
- width: 35.5px;
- height: 29.6px;
- text-align: center;
- margin-bottom: 32.4px;
- margin-left: 89px;
+  display: block;
+  margin: 0 auto 32.4px;   
 }
 
 
 
-@media screen and (min-width: 767px) 
-{ 
-  .foto-testimonio {
-    width: 217,2px;
-    height: 217,2px;
-  }
 
-  #container-testimonios {
-    display: flex;
-    flex-direction: row;
-    margin-top: 90px;
-    max-width: 767px;
-  }
-
-  .testimonio {
-    margin-right: 40px;
-  }
-
-  .text-testimonio {
-    width: 214.6px;
-    height: 96px;
-    font-family: Rubik;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    text-align: center;
-    color: #555555;
-  }
-}
-
-@media screen and (min-width:1366px)
-{
-
-  .foto-testimonio {
-    width: 293,6px;
-    height: 293,6px;
-  }
-
-
-  #container-testimonios {
-    display: flex;
-    flex-direction: row;
-    margin-top: 62px;
-    max-width: 1366px;
-  }
-
-  .text-testimonio {
-    width: 290px;
-    height: 81px;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    text-align: center;
-    color: #555555;
-  }
-}
