@@ -23,6 +23,7 @@ p{
   text-align: center;
   color: #555555;
   text-align: center;
+  width:100%;
 }
 
 .logos{
@@ -64,5 +65,37 @@ margin-bottom:32px;
   display:flex;
   flex-direction:column;
   align-items:center;
+
+}
+
+@media screen and (min-width: 768px){
+
+#logos{
+  display:flex;
+  flex-direction: row;
+}
+
+.divs{
+  width: 218px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+}
+
+@media screen and (min-width: 920px){
+
+  .divs{
+    width: 294px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  p{
+    font-size:18px;
+  }
+  h4{
+    margin-bottom: 40px;
+  }
 
 }
