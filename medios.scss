@@ -1,0 +1,68 @@
+h4{
+  font-family: 'Rubik', sans-serif;
+  width: 177px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #555555;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+p{
+  width: 218px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #555555;
+  text-align: center;
+}
+
+.logos{
+  display:block;
+  margin:auto;
+}
+
+#logo-vanguardia{
+  width: 177px;
+  height: 64px;
+  margin-bottom: 20px;
+
+}
+
+#parrafo-vanguardia{
+  margin-bottom:32px;
+}
+
+#logo-elle{
+  width: 116.5px;
+  height: 46.6px;
+}
+
+#parrafo-elle{
+margin-top: 20.4px;
+margin-bottom:32px;
+}
+
+#logo-efe{
+  width: 87.6px;
+  height: 62px;
+}
+
+#parrafo-efe{
+  margin-top: 20px;
+}
+
+#container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+}
