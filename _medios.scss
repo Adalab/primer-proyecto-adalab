@@ -4,28 +4,11 @@
   padding:0;
 }
 
-
-
 .elemento{
   max-width:218px;
 }
 
-.fotos{
-  display:block;
-  margin:0 auto;
-}
 
-#logo-vanguardia{
-  width:177px;
-}
-
-#logo-elle{
-  width:116.5px;
-}
-
-#logo-efe{
-  width:87.6px;
-}
 
 @media screen and (min-width:768px){
 
@@ -38,19 +21,6 @@
     margin-left:10px;
     margin-right:10px;
   }
-
-  .imagen-wrapper{
-    height: 64px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-
-  #logo-vanguardia,
-  #logo-efe,
-  #logo-elle{
-    height:64px;
-  }
 }
 
 @media screen and (min-width:920px){
@@ -59,15 +29,5 @@
     width:294px;  
     margin-left:20px;
     margin-right:20px;
-  }
-
-  .imagen-wrapper{
-    height: 74px;
-  }
-
-  #logo-vanguardia,
-  #logo-efe,
-  #logo-elle{
-    height:74px;
   }
 }

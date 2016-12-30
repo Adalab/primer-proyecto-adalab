@@ -1,31 +1,12 @@
 $vertical-margin: 32px;
 $width-logos-deskopt:184px;
 
-.imagenes{
-	padding: 0;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	list-style: none;
-}
+
 .elemento{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: $vertical-margin;
 }
-
-#logo-sabadell{
-	width: 140px;
-}
-
-#logo-tomillo{
-	width: 174px;
-}
-
-#logo-fontvella{
-	width: 126px;
-}
-
 
 @media screen and (min-width:768px){
 	.imagenes{

@@ -1,14 +1,6 @@
 
 ul {list-style: none;}
 
-
-.foto-testimonio {
-  display: block;
-  width: 217.2px;
-}
-
-
-
 .nombre  {
   width: 214.6px;
   font-size: 16px;
@@ -18,18 +10,8 @@ ul {list-style: none;}
   color:  #555555;
 }
 
-.icono-comillas {
-  display: block;
-  margin: 0 auto 32.4px;   
-}
-
-
 @media screen and (min-width: 768px) 
 { 
-  .foto-testimonio {
-    width: 217.2px;
-    height: 217.2px;
-  }
 
   .testimonio {
    margin: 40px 14.9px 23.3px 14.9px;
@@ -38,10 +20,6 @@ ul {list-style: none;}
 
 @media screen and (min-width:1366px)
 {
-  .foto-testimonio {
-    width: 293.6px;
-    height: 293.6px;
-  }
 
   .testimonio {
    margin: 62px 20.2px 24.4px 20.2px;
