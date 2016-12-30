@@ -1,4 +1,5 @@
 $vertical-margin: 32px;
+$width-logos-deskopt:184px;
 
 * {
 	box-sizing: border-box;
@@ -7,6 +8,7 @@ $vertical-margin: 32px;
 body{
 	font-family: 'Rubik', sans-serif;
 	color: #555555;
+	text-align:center;
 }
 
 .container{
@@ -16,9 +18,9 @@ body{
 }
 
 .titulo{
-	text-align:center;
+	
 	font-size: 20px;
-	font-weight: 700;
+	font-weight:bold;
 }
 
 .imagenes{
@@ -28,52 +30,63 @@ body{
 	align-items:center;
 	list-style: none;
 }
+.elemento{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: $vertical-margin;
+}
 
 #logo-sabadell{
 	width: 140px;
-	margin: 0 auto;
 }
 
 #logo-tomillo{
-	width: 184px;
-	margin: $vertical-margin auto 0;
+	width: 174px;
 }
 
 #logo-fontvella{
 	width: 126px;
-	margin: $vertical-margin auto 0;
 }
 
 
 @media screen and (min-width:768px){
 	.imagenes{
-		display:flex;
 		flex-direction:row;
 	}
 
+	.elemento{
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: $vertical-margin;
+	}
+
 	#logo-fontvella{
-		margin-top: 0;
-		width: 184px;
+		width: 156px;
+		
 	}
 
 	#logo-tomillo{
-		margin-top: 0;
 		width: 174px;
 	}
+
 	#logo-sabadell{
-		width: 140px;	
+		width: 140px;
 	}
 }
 
 @media screen and (min-width: 920px){
-	.imagenes{
-		display:flex;
-		flex-direction:row;
+	.elemento{
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: $vertical-margin;
 	}
+
 	#logo-fontvella{
-		width: 156px;
-	}
-	#logo-sabadell{
 		width: 184px;
+		
+	}
+
+	#logo-sabadell{
+		width: $width-logos-deskopt;
 	}
 }
