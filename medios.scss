@@ -1,5 +1,12 @@
 *{
-  box-sizing: border-box;
+  box-sizing:border-box;
+}
+body{
+  font-family:'Rubik', sans-serif;
+  color:#555555;
+  text-align:center;
+  line-height:1.5; 
+  font-size:16px;
 }
 
 #container{
@@ -9,91 +16,94 @@
 }
 
 #titulo{
-  font-family: 'Rubik', sans-serif;
-  width: 177px;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  color: #555555;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 32px;
+  width:100%;
+  font-size:18px;
+  font-weight:normal;
+  margin-top:40px;
+  margin-bottom:32px;
 }
 
 #lista{
   list-style:none;
+  padding:0;
 }
 
 .parrafos-logos{
-  width: 218px;
-  font-size: 16px;
-  line-height: 1.5;  
+  width:100%;
+  margin-top:20px;
+  margin-bottom:32px; 
+}
+
+.elemento{
+  max-width:218px;
 }
 
 .fotos{
-display:block;
-margin: auto;
-align-items: flex-end;
+  display:block;
+  margin:0 auto;
 }
 
 #logo-vanguardia{
-  width: 177px;
-  margin-bottom: 20px;
-  margin-left:20px;
-
-}
-
-#parrafo-vanguardia{
-  margin-bottom:32px;
+  width:177px;
 }
 
 #logo-elle{
-  width: 116.5px;
-}
-
-#parrafo-elle{
-margin-top: 20.4px;
-margin-bottom:32px;
+  width:116.5px;
 }
 
 #logo-efe{
-  width: 87.6px;
-  margin-left: 60px;
+  width:87.6px;
 }
 
-#parrafo-efe{
-  margin-top: 20px;
+@media screen and (min-width:768px){
+
+  #lista{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .elemento {
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+  .imagen-wrapper{
+    height: 64px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  #logo-vanguardia,
+  #logo-efe,
+  #logo-elle{
+    height:64px;
+  }
 }
 
+@media screen and (min-width:920px){
 
-@media screen and (min-width: 768px){
+  .elemento {
+    width:294px;  
+    margin-left:20px;
+    margin-right:20px;
+  }
 
-#lista{
-  display:flex;
-  flex-direction: row;
-}
-
-.elementos{
-  width: 218px;
-  margin-left:10px;
-  margin-right:10px;
-}
-
-}
-
-@media screen and (min-width: 920px){
-
-  .elementos{
-    width: 294px;
-    margin-left: 20px;
-    margin-right: 20px;
+  .imagen-wrapper{
+    height: 74px;
   }
 
   #parrafos-logos{
     font-size:18px;
   }
-  h4{
-    margin-bottom: 40px;
+
+  #titulo{
+    margin-bottom:40px;
   }
 
+  #logo-vanguardia,
+  #logo-efe,
+  #logo-elle{
+    height:74px;
+  }
 }
