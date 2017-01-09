@@ -1,3 +1,5 @@
+$width-logos-desktop:184px;
+
 .foto-testimonio {
   display: block;
   width: 217.2px;
@@ -100,11 +102,8 @@
 
 @media screen and (min-width: 920px){
 
-  #logo-fontvella{
-    width: 184px;  
-  }
-
+  #logo-fontvella,
   #logo-sabadell{
-    width: $width-logos-deskopt;
+    width: $width-logos-desktop;
   }
 }
