@@ -1,29 +1,28 @@
-
-#lista{
-  list-style:none;
-  padding:0;
+#lista {
+  list-style: none;
+  padding: 0;
 }
 
-.elemento{
-  max-width:218px;
+.elemento {
+  max-width: 218px;
 }
 
 @include breakpoint(768px) {
-  #lista{
-    display:flex;
-    flex-direction:row;
+  #lista {
+    display: flex;
+    flex-direction: row;
   }
 
   .elemento {
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
 @include breakpoint(920px) {
   .elemento {
-    width:294px;
-    margin-left:20px;
-    margin-right:20px;
+    width: 294px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

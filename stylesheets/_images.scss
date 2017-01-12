@@ -1,4 +1,4 @@
-$width-logos-desktop:184px;
+$width-logos-desktop: 184px;
 
 .foto-testimonio {
   display: block;
@@ -19,93 +19,93 @@ $width-logos-desktop:184px;
   margin: 0 auto 32.4px;
 }
 
-.fotos{
-  display:block;
-  margin:0 auto;
+.fotos {
+  display: block;
+  margin: 0 auto;
 }
 
-#logo-vanguardia{
-  width:177px;
+#logo-vanguardia {
+  width: 177px;
 }
 
-#logo-elle{
-  width:116.5px;
+#logo-elle {
+  width: 116.5px;
 }
 
-#logo-efe{
-  width:87.6px;
+#logo-efe {
+  width: 87.6px;
 }
 
 @include breakpoint(768px) {
-  .imagen-wrapper{
+  .imagen-wrapper {
     height: 64px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #logo-vanguardia,
   #logo-efe,
-  #logo-elle{
-    height:64px;
+  #logo-elle {
+    height: 64px;
   }
 }
 
 @include breakpoint(920px) {
-  .imagen-wrapper{
+  .imagen-wrapper {
     height: 74px;
   }
 
   #logo-vanguardia,
   #logo-efe,
-  #logo-elle{
-    height:74px;
+  #logo-elle {
+    height: 74px;
   }
 }
 
 .imagenes {
   padding: 0;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
 }
 
-#logo-sabadell{
+#logo-sabadell {
   width: 140px;
 }
 
-#logo-tomillo{
+#logo-tomillo {
   width: 174px;
 }
 
-#logo-fontvella{
+#logo-fontvella {
   width: 126px;
 
 }
 
 @include breakpoint(768px) {
-  .imagenes{
-    flex-direction:row;
+  .imagenes {
+    flex-direction: row;
   }
 
-  #logo-fontvella{
+  #logo-fontvella {
     width: 156px;
 
   }
 
-  #logo-tomillo{
+  #logo-tomillo {
     width: 174px;
   }
 
-  #logo-sabadell{
+  #logo-sabadell {
     width: 140px;
   }
 }
 
 @include breakpoint(920px) {
   #logo-fontvella,
-  #logo-sabadell{
+  #logo-sabadell {
     width: $width-logos-desktop;
   }
 }
