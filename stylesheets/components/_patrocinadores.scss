@@ -5,7 +5,7 @@ $vertical-margin: 32px;
 	margin-right: auto;
 	margin-bottom: $vertical-margin;
 
-	@include breakpoint(768px) {
+	@include breakpoint($tablet) {
 		margin-left: 20px;
 		margin-right: 20px;
 		margin-bottom: $vertical-margin;
@@ -18,14 +18,13 @@ $vertical-margin: 32px;
 	}
 }
 
-@include breakpoint(768px) {
+@include breakpoint($tablet) {
 	.imagenes {
 		flex-direction: row;
 	}
 
 	#logo-fontvella {
 		width: 156px;
-
 	}
 
 	#logo-tomillo {

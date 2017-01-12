@@ -1,15 +1,7 @@
 .text-testimonio {
-  width: 214px;
-  margin: 24px auto 20px auto;
-
-  @include breakpoint(768px) {
-    margin-bottom: 20px;
-  }
-
-  @include breakpoint(1366px) {
-    width: 290px;
-    font-size: 18px;
-  }
+  margin-top: 24px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .parrafos-logos {
@@ -19,19 +11,21 @@
 }
 
 .nombre  {
-  width: 214px;
-  font-size: 16px;
   font-weight: $bold;
-  text-align: center;
-  margin: 16px auto 20px auto;
+  margin-top: 20px;
+  margin-bottom: 18px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 32px;
+  }
 }
 
 .titulo {
   font-size: 18px;
   font-weight: $normal;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
-  @include breakpoint(920px) {
-    margin-bottom: 40px;
+  @include breakpoint($desktop) {
+    font-size: 24px;
   }
 }

@@ -2,9 +2,13 @@ $primary-color: #3CDBC0;
 $black: #555;
 
 $font-family:'Rubik', sans-serif;
-$font-size: 16px;
+$font-size-mobile: 16px;
+$font-size-desktop: 18px;
 $line-heigth: 1.5;
 $font-color: $black;
 
 $normal: 400;
 $bold: 700;
+
+$tablet: 768px;
+$desktop: 1366px;

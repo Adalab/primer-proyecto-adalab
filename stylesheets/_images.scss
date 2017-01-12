@@ -1,21 +1,12 @@
 $width-logos-desktop: 184px;
 
-.foto-testimonio {
+.imagen-responsive {
+  max-width: 100%;
   display: block;
-  width: 218px;
-
-  @include breakpoint(768px) {
-    height: 218px;
-  }
-
-  @include breakpoint(1366px) {
-    width: 294px;
-    height: 294px;
-  }
 }
 
 .imagen-wrapper {
-  @include breakpoint(768px) {
+  @include breakpoint($tablet) {
     height: 64px;
     display: flex;
     align-items: center;
@@ -25,11 +16,6 @@ $width-logos-desktop: 184px;
   @include breakpoint(920px) {
     height: 74px;
   }
-}
-
-.icono-comillas {
-  display: block;
-  margin: 0 auto 32px;
 }
 
 .fotos {
@@ -44,7 +30,7 @@ $width-logos-desktop: 184px;
 #logo-vanguardia,
 #logo-efe,
 #logo-elle {
-  @include breakpoint(768px) {
+  @include breakpoint($tablet) {
     height: 64px;
   }
 
@@ -60,7 +46,7 @@ $width-logos-desktop: 184px;
   align-items: center;
   list-style: none;
 
-  @include breakpoint(768px) {
+  @include breakpoint($tablet) {
     flex-direction: row;
   }
 }
@@ -68,7 +54,7 @@ $width-logos-desktop: 184px;
 #logo-fontvella {
   width: 126px;
 
-  @include breakpoint(768px) {
+  @include breakpoint($tablet) {
     width: 156px;
   }
 
@@ -78,7 +64,7 @@ $width-logos-desktop: 184px;
 }
 
 #logo-sabadell {
-  @include breakpoint(768px) {
+  @include breakpoint($tablet) {
     width: 140px;
   }
 

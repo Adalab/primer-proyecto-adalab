@@ -2,37 +2,24 @@
 
 body {
   font-family: $font-family;
-  color: $text-color;
+  color: $font-color;
   text-align: center;
   line-height: $line-heigth;
-  font-size: $font-size;
+  font-size: $font-size-mobile;
   font-weight: $normal;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-desktop;
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#container-testimonios {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  align-items: center;
-  margin: 36px auto 0;
-  max-width: 375px;
-
-  @include breakpoint(768px) {
-    flex-direction: row;
-    align-items: flex-start;
-    margin: auto;
-    max-width: 767px;
-  }
-
-
-  @include breakpoint(1366px) {
-    justify-content: center;
-    max-width: 1366px;
-  }
 }
