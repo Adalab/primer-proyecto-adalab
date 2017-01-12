@@ -2,21 +2,34 @@ $width-logos-desktop: 184px;
 
 .foto-testimonio {
   display: block;
-  width: 217.2px;
+  width: 218px;
 
   @include breakpoint(768px) {
-    height: 217.2px;
+    height: 218px;
   }
 
   @include breakpoint(1366px) {
-    width: 293.6px;
-    height: 293.6px;
+    width: 294px;
+    height: 294px;
+  }
+}
+
+.imagen-wrapper {
+  @include breakpoint(768px) {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include breakpoint(920px) {
+    height: 74px;
   }
 }
 
 .icono-comillas {
   display: block;
-  margin: 0 auto 32.4px;
+  margin: 0 auto 32px;
 }
 
 .fotos {
@@ -24,41 +37,18 @@ $width-logos-desktop: 184px;
   margin: 0 auto;
 }
 
-#logo-vanguardia {
-  width: 177px;
-}
+#logo-vanguardia { width: 176px; }
+#logo-elle { width: 116px; }
+#logo-efe { width: 88px; }
 
+#logo-vanguardia,
+#logo-efe,
 #logo-elle {
-  width: 116.5px;
-}
-
-#logo-efe {
-  width: 87.6px;
-}
-
-@include breakpoint(768px) {
-  .imagen-wrapper {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #logo-vanguardia,
-  #logo-efe,
-  #logo-elle {
+  @include breakpoint(768px) {
     height: 64px;
   }
-}
 
-@include breakpoint(920px) {
-  .imagen-wrapper {
-    height: 74px;
-  }
-
-  #logo-vanguardia,
-  #logo-efe,
-  #logo-elle {
+  @include breakpoint(920px) {
     height: 74px;
   }
 }
@@ -69,43 +59,34 @@ $width-logos-desktop: 184px;
   flex-direction: column;
   align-items: center;
   list-style: none;
-}
 
-#logo-sabadell {
-  width: 140px;
-}
-
-#logo-tomillo {
-  width: 174px;
+  @include breakpoint(768px) {
+    flex-direction: row;
+  }
 }
 
 #logo-fontvella {
   width: 126px;
 
-}
-
-@include breakpoint(768px) {
-  .imagenes {
-    flex-direction: row;
-  }
-
-  #logo-fontvella {
+  @include breakpoint(768px) {
     width: 156px;
-
   }
 
-  #logo-tomillo {
-    width: 174px;
-  }
-
-  #logo-sabadell {
-    width: 140px;
-  }
-}
-
-@include breakpoint(920px) {
-  #logo-fontvella,
-  #logo-sabadell {
+  @include breakpoint(920px) {
     width: $width-logos-desktop;
   }
+}
+
+#logo-sabadell {
+  @include breakpoint(768px) {
+    width: 140px;
+  }
+
+  @include breakpoint(920px) {
+    width: $width-logos-desktop;
+  }
+}
+
+#logo-tomillo {
+  width: 174px;
 }

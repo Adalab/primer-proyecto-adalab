@@ -1,26 +1,22 @@
 #lista {
   list-style: none;
   padding: 0;
+
+  @include breakpoint(768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .elemento {
   max-width: 218px;
-}
 
-@include breakpoint(768px) {
-  #lista {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .elemento {
+  @include breakpoint(768px) {
     margin-left: 10px;
     margin-right: 10px;
   }
-}
 
-@include breakpoint(920px) {
-  .elemento {
+  @include breakpoint(920px) {
     width: 294px;
     margin-left: 20px;
     margin-right: 20px;

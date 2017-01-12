@@ -4,17 +4,23 @@ $vertical-margin: 32px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: $vertical-margin;
+
+	@include breakpoint(768px) {
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: $vertical-margin;
+	}
+
+	@include breakpoint(920px) {
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: $vertical-margin;
+	}
 }
 
 @include breakpoint(768px) {
 	.imagenes {
 		flex-direction: row;
-	}
-
-	.elemento {
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-bottom: $vertical-margin;
 	}
 
 	#logo-fontvella {
@@ -28,13 +34,5 @@ $vertical-margin: 32px;
 
 	#logo-sabadell {
 		width: 140px;
-	}
-}
-
-@include breakpoint(920px) {
-	.elemento {
-		margin-left: 40px;
-		margin-right: 40px;
-		margin-bottom: $vertical-margin;
 	}
 }

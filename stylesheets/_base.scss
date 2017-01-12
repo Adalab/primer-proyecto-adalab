@@ -2,10 +2,11 @@
 
 body {
   font-family: $font-family;
-  color: #555555;
+  color: $text-color;
   text-align: center;
-  line-height: 1.5;
-  font-size: 16px;
+  line-height: $line-heigth;
+  font-size: $font-size;
+  font-weight: $normal;
 }
 
 .container {

@@ -1,9 +1,9 @@
 .text-testimonio {
-  width: 214.6px;
-  margin: 23.3px auto 20.8px auto;
+  width: 214px;
+  margin: 24px auto 20px auto;
 
   @include breakpoint(768px) {
-    margin-bottom: 20.8px;
+    margin-bottom: 20px;
   }
 
   @include breakpoint(1366px) {
@@ -19,17 +19,16 @@
 }
 
 .nombre  {
-  width: 214.6px;
+  width: 214px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: $bold;
   text-align: center;
-  margin: 16px auto 18.7px auto;
-  color:  #555555;
+  margin: 16px auto 20px auto;
 }
 
 .titulo {
   font-size: 18px;
-  font-weight: normal;
+  font-weight: $normal;
   margin-bottom: 32px;
 
   @include breakpoint(920px) {
