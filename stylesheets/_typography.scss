@@ -2,11 +2,11 @@
   width: 214.6px;
   margin: 23.3px auto 20.8px auto;
 
-  @media screen and (min-width: 768px) {
+  @include breakpoint(768px) {
     margin-bottom: 20.8px;
   }
 
-  @media screen and (min-width:1366px){
+  @include breakpoint(1366px) {
     width: 290px;
     font-size: 18px;
   }
@@ -27,15 +27,12 @@
   color:  #555555;
 }
 
-
 .titulo{
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 32px;
 
-  @media screen and (min-width: 920px){
-
+  @include breakpoint(920px) {
     margin-bottom: 40px;
-
   }
 }

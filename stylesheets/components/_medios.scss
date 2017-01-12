@@ -8,8 +8,7 @@
   max-width:218px;
 }
 
-@media screen and (min-width:768px){
-
+@include breakpoint(768px) {
   #lista{
     display:flex;
     flex-direction:row;
@@ -21,8 +20,7 @@
   }
 }
 
-@media screen and (min-width:920px){
-
+@include breakpoint(920px) {
   .elemento {
     width:294px;
     margin-left:20px;

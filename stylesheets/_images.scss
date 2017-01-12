@@ -3,10 +3,12 @@ $width-logos-desktop:184px;
 .foto-testimonio {
   display: block;
   width: 217.2px;
-  @media screen and (min-width: 768px) {
+
+  @include breakpoint(768px) {
     height: 217.2px;
   }
-  @media screen and (min-width:1366px){
+
+  @include breakpoint(1366px) {
     width: 293.6px;
     height: 293.6px;
   }
@@ -33,8 +35,8 @@ $width-logos-desktop:184px;
 #logo-efe{
   width:87.6px;
 }
-@media screen and (min-width:768px){
 
+@include breakpoint(768px) {
   .imagen-wrapper{
     height: 64px;
     display:flex;
@@ -49,8 +51,7 @@ $width-logos-desktop:184px;
   }
 }
 
-@media screen and (min-width:920px){
-
+@include breakpoint(920px) {
   .imagen-wrapper{
     height: 74px;
   }
@@ -61,13 +62,15 @@ $width-logos-desktop:184px;
     height:74px;
   }
 }
-  .imagenes{
+
+.imagenes {
   padding: 0;
   display:flex;
   flex-direction:column;
   align-items:center;
   list-style: none;
 }
+
 #logo-sabadell{
   width: 140px;
 }
@@ -81,7 +84,7 @@ $width-logos-desktop:184px;
 
 }
 
-@media screen and (min-width:768px){
+@include breakpoint(768px) {
   .imagenes{
     flex-direction:row;
   }
@@ -100,8 +103,7 @@ $width-logos-desktop:184px;
   }
 }
 
-@media screen and (min-width: 920px){
-
+@include breakpoint(920px) {
   #logo-fontvella,
   #logo-sabadell{
     width: $width-logos-desktop;

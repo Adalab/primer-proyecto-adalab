@@ -6,7 +6,7 @@ $vertical-margin: 32px;
 	margin-bottom: $vertical-margin;
 }
 
-@media screen and (min-width:768px){
+@include breakpoint(768px) {
 	.imagenes{
 		flex-direction:row;
 	}
@@ -31,7 +31,7 @@ $vertical-margin: 32px;
 	}
 }
 
-@media screen and (min-width: 920px){
+@include breakpoint(920px) {
 	.elemento{
 		margin-left: 40px;
 		margin-right: 40px;
