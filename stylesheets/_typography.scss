@@ -1,0 +1,41 @@
+.text-testimonio {
+  width: 214.6px;
+  margin: 23.3px auto 20.8px auto;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20.8px;
+  }
+
+  @media screen and (min-width:1366px){
+    width: 290px;
+    font-size: 18px;
+  }
+}
+
+.parrafos-logos{
+  width:100%;
+  margin-top:20px;
+  margin-bottom:32px;
+}
+
+.nombre  {
+  width: 214.6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 16px auto 18.7px auto;
+  color:  #555555;
+}
+
+
+.titulo{
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 920px){
+
+    margin-bottom: 40px;
+
+  }
+}
