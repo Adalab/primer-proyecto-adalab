@@ -1,40 +1,4 @@
-$width-logos-desktop: 184px;
-
 .imagen-responsive {
   max-width: 100%;
   display: block;
-}
-
-.imagen-wrapper {
-  @include breakpoint($tablet) {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @include breakpoint(920px) {
-    height: 74px;
-  }
-}
-
-.fotos {
-  display: block;
-  margin: 0 auto;
-}
-
-#logo-vanguardia { width: 176px; }
-#logo-elle { width: 116px; }
-#logo-efe { width: 88px; }
-
-#logo-vanguardia,
-#logo-efe,
-#logo-elle {
-  @include breakpoint($tablet) {
-    height: 64px;
-  }
-
-  @include breakpoint(920px) {
-    height: 74px;
-  }
 }

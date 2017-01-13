@@ -1,24 +1,91 @@
-#lista {
-  list-style: none;
-  padding: 0;
+$medium: $tablet;
+$large: 920px;
 
-  @include breakpoint($tablet) {
-    display: flex;
-    flex-direction: row;
+$elemento-height-mobile: auto;
+$elemento-height-tablet: 98px;
+$elemento-margin-bottom: 24px;
+$elemento-width-mobile: 218px;
+$elemento-width-tablet: 276px;
+$elemento-width-desktop: 208px;
+$elemento-padding-mobile: 4px;
+$elemento-padding-tablet: 0;
+
+$elemento-gutter-mobile: 20px;
+$elemento-gutter-desktop: 16px;
+
+.medio {
+	width: $elemento-width-mobile;
+	height: $elemento-height-mobile;
+	margin-bottom: $elemento-margin-bottom;
+	padding: $elemento-padding-mobile;
+
+	@include breakpoint($medium) {
+		height: $elemento-height-tablet;
+		width: $elemento-width-tablet;
+		padding: $elemento-padding-tablet;
+	}
+
+	@include breakpoint($large) {
+		width: $elemento-width-desktop;
+		margin-left: $elemento-gutter-desktop / 2;
+		margin-right: $elemento-gutter-desktop / 2;
+	}
+}
+
+.medio-imagen-wrapper {
+  @include breakpoint($medium) {
+		transform: translateY(8px);
+    height: 64px;
+  }
+
+  @include breakpoint($large) {
+		transform: translateY(13px);
+    height: 74px;
+  }
+
+	@include breakpoint($desktop) {
+		transform: translateY(10px);
+    height: 74px;
   }
 }
 
-.elemento {
-  max-width: 218px;
+.medio-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
-  @include breakpoint($tablet) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+#logo-emprendedores {
+	height: 34px;
 
-  @include breakpoint(920px) {
-    width: 294px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+	@include breakpoint($desktop) {
+		padding-left: 25px;
+		padding-right: 25px;
+		height: 34px;
+	}
+}
+
+
+#logo-vanguardia {
+	height: 54px;
+
+	@include breakpoint($desktop) {
+		height: 63px;
+	}
+}
+
+#logo-efe {
+	height: 52px;
+
+	@include breakpoint($desktop) {
+		height: 60px;
+	}
+}
+
+#logo-elle {
+	height: 48px;
+
+	@include breakpoint($desktop) {
+		height: 55px;
+	}
 }
