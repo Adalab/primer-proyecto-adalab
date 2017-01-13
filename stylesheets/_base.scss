@@ -1,3 +1,9 @@
+$section-margin-top-mobile: 40px;
+$section-margin-top-desktop: 64px;
+$section-margin-bottom-mobile: 56px;
+$section-margin-bottom-tablet: 64px;
+$section-margin-bottom-desktop: 80px;
+
 * { box-sizing: border-box; }
 
 body {
@@ -13,13 +19,23 @@ body {
   }
 }
 
-.list-unstyled {
+.lista-sin-estilo {
   list-style: none;
   padding: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.seccion {
+  margin-top: $section-margin-top-mobile;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $section-margin-top-mobile;
+
+  @include breakpoint($tablet) {
+    margin-bottom: $section-margin-bottom-tablet;
+  }
+
+  @include breakpoint($desktop) {
+    margin-top: $section-margin-top-desktop;
+    margin-bottom: $section-margin-bottom-desktop;
+  }
 }
