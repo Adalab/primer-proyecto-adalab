@@ -4,20 +4,7 @@ $section-margin-bottom-mobile: 56px;
 $section-margin-bottom-tablet: 64px;
 $section-margin-bottom-desktop: 80px;
 
-* { box-sizing: border-box; }
-
-body {
-  font-family: $font-family;
-  color: $font-color;
-  text-align: center;
-  line-height: $line-heigth;
-  font-size: $font-size-mobile;
-  font-weight: $normal;
-
-  @include breakpoint($desktop) {
-    font-size: $font-size-desktop;
-  }
-}
+.seccion * { box-sizing: border-box; }
 
 .lista-sin-estilo {
   list-style: none;
@@ -25,6 +12,12 @@ body {
 }
 
 .seccion {
+  font-family: $font-family;
+  color: $font-color;
+  text-align: center;
+  line-height: $line-heigth;
+  font-size: $font-size-mobile;
+  font-weight: $normal;
   margin-top: $section-margin-top-mobile;
   margin-left: auto;
   margin-right: auto;
@@ -35,6 +28,7 @@ body {
   }
 
   @include breakpoint($desktop) {
+    font-size: $font-size-desktop;
     margin-top: $section-margin-top-desktop;
     margin-bottom: $section-margin-bottom-desktop;
   }
